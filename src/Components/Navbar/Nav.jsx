@@ -1,10 +1,10 @@
 import React from "react";
+import { DrawerExample } from "./SideBar";
 import {
   Button,
   ButtonGroup,
   Container,
   Flex,
-  Image,
   Popover,
   PopoverArrow,
   PopoverBody,
@@ -26,12 +26,7 @@ export const Navbar = () => {
         justifyContent="space-between"
       >
         <Flex width="45%" justifyContent="space-around" alignItems="center">
-          <Image
-            src="https://mma.prnewswire.com/media/1631809/Masai_Logo.jpg?p=facebook"
-            width="70px"
-            height="30px"
-          />
-
+          <DrawerExample />
           <Popover trigger="hover">
             <PopoverTrigger>
               <Button
@@ -99,12 +94,7 @@ export const Navbar = () => {
               Sign In
             </Button>
 
-            <Button
-              colorScheme="pink"
-              
-            >
-              SignUp
-            </Button>
+            <Button colorScheme="pink">SignUp</Button>
           </ButtonGroup>
         </Flex>
       </Container>
